@@ -1,6 +1,6 @@
 An example of using callbacks.
 
-'''
+```
 (function() {
 
   var alpha, alphaCallback, beta, betaCallback;
@@ -38,11 +38,11 @@ An example of using callbacks.
   alpha(alphaCallback);
   
 }());
-'''
+```
 
 Using callbacks with a _setTimeout_ function — to demonstrate how callbacks are handled asynchronously.
 
-'''
+```
 (function() {
 
   var alpha, alphaCallback, beta, betaCallback;
@@ -84,4 +84,4 @@ Using callbacks with a _setTimeout_ function — to demonstrate how callbacks ar
   alpha(alphaCallback);
   
 }());
-'''
+```
