@@ -5,6 +5,10 @@ This series of documents is my biased take on how to explain some concepts in Ja
 
 There isn't anything new, or revolutionary here. It's more an excercise in refining my take on JS pedagogy.
 
+### A note on console.log
+
+I'm going to use it in my examples. Deal with it.
+
 Contents
 - [Asynchronous callbacks](asynchronous_js.md)
 - [References & pointers](references_pointers.md)

@@ -6,31 +6,38 @@ The following example shows how you can pass an object to a function, and change
 (function() {
 
   var testObj, justChangeValue, createNewObj;
-  
-  justChangeValue = function (obj) {
-    
-   obj.test =  1;
-    
-  }
-  
-  createNewObj = function(obj) {
-    
-    var obj = {
-      test0: 0
-    }
-    
-  }
-  
-  var testObj = {test: 0};
 
+  //this is going to change the value of the object when you pass that object in
+  justChangeValue = function (obj) {
+
+   obj.test =  1;
+
+  }
+
+  //we pass the object in, but we also create a new object with the same name
+  createNewObj = function(obj) {
+
+    obj = {
+      test: 0
+    }
+
+  }
+
+  // our object
+  testObj = {test: 0};
+
+  //pass in a reference to the object
   justChangeValue(testObj);
 
-  //testObj.test = 1;
-  
-  createNewObj(testObj);
-  
-  //testObj.test (STILL) = 1;
+  //hey! it's changed!
+  console.log(testObj.test);// this equals 1
 
-  
+  //pass the object in again, to a different function
+  createNewObj(testObj);
+
+  //it's NOT changed!
+  console.log(testObj.test);// this STILL equals 1
+
+
 }());
 ```
