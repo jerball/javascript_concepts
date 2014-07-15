@@ -1,5 +1,7 @@
 An example of using callbacks.
 
+In this first example, 
+
 ```
 (function() {
 
@@ -35,6 +37,8 @@ An example of using callbacks.
     
   }
 
+  //this is evaluated first
+  //we pass a reference to the callback
   alpha(alphaCallback);
   
 }());
